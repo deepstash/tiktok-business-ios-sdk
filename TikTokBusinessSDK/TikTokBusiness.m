@@ -739,7 +739,8 @@ withType:(NSString *)type
             }
 
             if(self.automaticTrackingEnabled && self.paymentTrackingEnabled){
-                [TikTokPaymentObserver startObservingTransactions];
+                // Disable observer for transactions because of bug
+                // [TikTokPaymentObserver startObservingTransactions];
             }
 
             if(!self.automaticTrackingEnabled){

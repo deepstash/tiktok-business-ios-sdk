@@ -38,7 +38,8 @@ static NSMutableArray *g_pendingRequestors;
 
 + (void)startObservingTransactions
 {
-    [[self singleton] startObservingTransactions];
+    // Disable observer for transactions because of bug
+    // [[self singleton] startObservingTransactions];
 }
 
 + (void)stopObservingTransactions
